@@ -2,7 +2,24 @@ class CustomLogin extends HTMLElement {
     constructor() {
         super();
         const shadowRoot = this.attachShadow({mode: 'open'});
-        const styles = `
+        shadowRoot.innerHTML = `
+            <style>${CustomLogin.styles}</style>
+            <div class="login-panel">
+                <h3>登陆组件</h3>
+                <div class="form-item">
+                    <label>用户名：</label>
+                    <input type="text" disabled="${this.disabled}">
+                </div>
+                <div class="form-item">
+                    <label>密码：</label>
+                    <input type="password" disabled="${this.disabled}">
+                </div>
+            </div>
+        `;
+    }
+
+    static get styles() {
+        return `
             :host {
                 display: block;
             }
@@ -24,20 +41,6 @@ class CustomLogin extends HTMLElement {
             .form-item {
                 margin-bottom: 5px;
             }
-        `;
-        shadowRoot.innerHTML = `
-            <style>${styles}</style>
-            <div class="login-panel">
-                <h3>登陆组件</h3>
-                <div class="form-item">
-                    <label>用户名：</label>
-                    <input type="text" disabled="${this.disabled}">
-                </div>
-                <div class="form-item">
-                    <label>密码：</label>
-                    <input type="password" disabled="${this.disabled}">
-                </div>
-            </div>
         `;
     }
 
