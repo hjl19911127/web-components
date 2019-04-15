@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>IE DEMO</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="//unpkg.com/@webcomponents/webcomponentsjs@2.2.8/custom-elements-es5-adapter.js"></script>
+    <script src="//unpkg.com/@webcomponents/webcomponentsjs@2.2.8/webcomponents-loader.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="demo">
+        <h2 class="demo-header">自定义组件</h2>
+        <p class="demo-body">
+            <custom-login id="custom-login" disabled></custom-login>
+        </p>
+    </div>
+    <div class="demo">
+        <h2 class="demo-header">扩展原生html元素</h2>
+        <p class="demo-body">
+            <label>扩展Input元素：<input type="text" is="fixed-input"></label>
+        </p>
+    </div>
+</div>
+<script src="./components/fixed-input.module.js"></script>
+<script src="./components/custom-login/index.module.js"></script>
+</body>
+</html>

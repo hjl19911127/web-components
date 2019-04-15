@@ -1,0 +1,37 @@
+/**
+#247BA0 #70C1B3 #B2DBBF #F3FFBD #FF1654
+ */
+
+h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+label {
+    padding: 5px;
+    background-color: #B2DBBF;
+    display: block;
+    color: #666666;
+}
+
+input {
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #ddd;
+    padding: 0;
+    margin: 0;
+}
+
+.demo {
+    background-color: #247BA0;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.demo-header {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
