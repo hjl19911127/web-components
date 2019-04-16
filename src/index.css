@@ -36,6 +36,12 @@ input {
     margin-bottom: 10px;
 }
 
+.demo-img {
+    width: 30%;
+    height: 100px;
+}
+
 #custom-login {
     --background-color: green;
 }
+
