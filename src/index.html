@@ -10,11 +10,15 @@
 <body>
 <div class="container">
     <div class="demo">
-        <h2 class="demo-header">自定义组件</h2>
+        <h2 class="demo-header">自定义组件 页面载入</h2>
         <p class="demo-body">
-            <custom-login id="custom-login" disabled="false"></custom-login>
-            <script src="./src/components/custom-login/index.module.js" type="module"></script>
+            <button id="J_toggleLogin">切换登录状态</button>
+            <custom-login id="custom-login"></custom-login>
         </p>
+    </div>
+    <div class="demo">
+        <h2 class="demo-header">自定义组件 JS插入</h2>
+        <p class="demo-body" id="J_insertLogin"></p>
     </div>
     <div class="demo">
         <h2 class="demo-header">扩展原生html元素</h2>

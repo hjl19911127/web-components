@@ -2,14 +2,15 @@
 #247BA0 #70C1B3 #B2DBBF #F3FFBD #FF1654
  */
 
-h2, p {
+h2,
+p {
     margin: 0;
     padding: 0;
 }
 
 label {
     padding: 5px;
-    background-color: #B2DBBF;
+    background-color: #b2dbbf;
     display: block;
     color: #666666;
 }
@@ -23,7 +24,7 @@ input {
 }
 
 .demo {
-    background-color: #247BA0;
+    background-color: #247ba0;
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 20px;
@@ -35,3 +36,6 @@ input {
     margin-bottom: 10px;
 }
 
+#custom-login {
+    --background-color: green;
+}
