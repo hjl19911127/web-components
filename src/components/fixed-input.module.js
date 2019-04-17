@@ -7,7 +7,7 @@ class FixedInput extends HTMLInputElement {
         this.addEventListener('blur', (e) => {
             console.log('FixedInput blur')
             setTimeout(() => {
-                document.body.scrollTop = document.body.scrollTop - 1;
+                document.documentElement.scrollTop = document.documentElement.scrollTop - 10;
             })
         }, false)
     }

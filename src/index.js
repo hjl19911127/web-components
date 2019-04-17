@@ -14,7 +14,7 @@ function createShadowDom() {
     var shadow = element.attachShadow({ mode: 'closed' });
     shadow.innerHTML = '<div>in shadow</div>';
     document.body.appendChild(element);
-    console.log(shadow.querySelector('div'))
+    // console.log(shadow.querySelector('div'))
 }
 function bindEvent() {
     // 自定义事件

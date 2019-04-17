@@ -35,6 +35,20 @@
         </p>
     </div>
     <div class="demo">
+        <h2 class="demo-header">Slots</h2>
+        <p class="demo-body">
+            <image-gallery-bad>
+                <img class="demo-img"
+                     src="http://ws2.sinaimg.cn/bmiddle/9150e4e5ly1fhhjtijvkyj20hs0hs75h.jpg">
+                <img class="demo-img"
+                     src="http://wx1.sinaimg.cn/bmiddle/006m97Kgly1fx253tk4j2j30m80m8tbu.jpg">
+                <img class="demo-img"
+                     src="http://wx1.sinaimg.cn/bmiddle/006I1bcHgy1fr5e8x1lx9j30ku0kkmyt.jpg">
+                <button slot="button">切换</button>
+            </image-gallery-bad>
+        </p>
+    </div>
+    <div class="demo">
         <h2 class="demo-header">扩展原生html元素</h2>
         <p class="demo-body">
             <label>扩展Input元素：<input type="text" is="fixed-input"></label>
@@ -44,6 +58,7 @@
 <script src="components/custom-login/index.module.js" type="module"></script>
 <script src="components/image-gallery/index.module.js" type="module"></script>
 <script src="components/fixed-input.module.js" type="module"></script>
+<script src="components/bad.module.js" type="module"></script>
 <script src="index.js"></script>
 </body>
 </html>

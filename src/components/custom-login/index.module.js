@@ -98,7 +98,7 @@ class CustomLogin extends HTMLElement {
 
     // 当 custom element首次被插入文档DOM时
     connectedCallback() {
-        console.log('connectedCallback');
+        // console.log('connectedCallback');
     }
 
     // 当 custom element从文档DOM中删除时
